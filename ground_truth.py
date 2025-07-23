@@ -9,7 +9,18 @@ if "session_id" not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())
 
 st.title("💬 Flite RAG Chat & QA Dashboard")
-API_URL = st.text_input("Enter your ngrok API URL:", label_visibility="collapsed")
+# Let user input ngrok URL
+st.session_state.api_url = st.text_input(
+    "Enter your backend URL (e.g. https://1234.ngrok-free.app)",
+    value=st.session_state.api_url
+)
+
+# Stop everything if no URL is given
+if not st.session_state.api_url:
+    st.warning("Please enter your backend URL to begin.")
+    st.stop()
+
+API_URL = st.session_state.api_url
 
 # --- Chat UI ---
 user_input = st.chat_input("Type your message...")
