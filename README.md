@@ -1,12 +1,12 @@
 # Flitesmith
 
-**A parody of LangChain's LangSmith, for Flite AI.**
+**A parody of LangChain's LangSmith for RAG Evaluation.**
 
 ---
 
 ## Overview
 
-Flitesmith is a playful, experimental platform inspired by [LangChain's LangSmith](https://smith.langchain.com/), but designed for use with Flite AI. It provides a streamlit frontend for for managing interacting with a chatbot, and viewing the RAG snippets AI responses used as context. This project is not affiliated with LangChain or Flite AI.
+Flitesmith is a playful, experimental platform inspired by [LangChain's LangSmith](https://smith.langchain.com/), but designed for use with Flite AI. It provides a streamlit frontend for for managing interacting with a chatbot, and viewing the RAG snippets AI responses used as context.
 
 ---
 
@@ -103,16 +103,3 @@ class Message(BaseModel):
   "session_id": "<string: UUID>"
 }
 ```
-
----
-
-## Notes
-- This project is a parody and not intended for production use.
-- Requires a running backend accessible via ngrok for external connections.
-- Expects strict input/output formats as shown above.
-- For more details, see `ground_truth.py`.
-
----
-
-## License
-MIT (parody/fair use) 
