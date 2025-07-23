@@ -19,7 +19,6 @@ st.session_state.api_url = st.text_input(
 
 # Stop everything if no URL is given
 if not st.session_state.api_url:
-    st.caption("Please enter your backend URL to begin.")
     st.stop()
 
 API_URL = st.session_state.api_url
