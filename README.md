@@ -93,10 +93,12 @@ class Message(BaseModel):
   "response": "<string: assistant's reply>",
   "retrieved_docs": [
     {"text": "<string: document snippet>",
-      "...": "..." // any other fields, optional}
+      "...": "..." // any other fields, optional
+    }
   ],
   "messages": [
-    {"role": "user" | "assistant", "content": "<string>"}
+    {"role": "user", "content": "<string>"}
+    {"role": "assistant", "content": "<string>"}
   ],
   "session_id": "<string: UUID>"
 }
