@@ -88,7 +88,7 @@ class Message(BaseModel):
 ```
 
 #### Example Response
-```json
+```jsonc
 {
   "response": "<string: assistant's reply>",
   "retrieved_docs": [
