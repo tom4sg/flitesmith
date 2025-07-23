@@ -90,13 +90,15 @@ class Message(BaseModel):
 #### Example Response
 ```json
 {
-  "response": "Flite is ...",
+  "response": "<string: assistant's reply>",
   "retrieved_docs": [
-    {"text": "...", "score": 0.98},
-    ...
+    {"text": "<string: document snippet>",
+      "...": "..." // any other fields, optional}
   ],
-  "messages": [...],
-  "session_id": "abc123"
+  "messages": [
+    {"role": "user" | "assistant", "content": "<string>"}
+  ],
+  "session_id": "<string: UUID>"
 }
 ```
 
