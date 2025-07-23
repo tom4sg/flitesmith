@@ -7,6 +7,8 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 if "session_id" not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())
+if "api_url" not in st.session_state:
+    st.session_state.api_url = ""
 
 st.title("💬 Flite RAG Chat & QA Dashboard")
 # Let user input ngrok URL
