@@ -36,21 +36,13 @@ Flitesmith is a playful, experimental platform inspired by [LangChain's LangSmit
    pip install -r requirements.txt
    ```
 
-2. **Set up environment variables:**
-   - `MONGODB_URI` (your MongoDB connection string)
-   - `PERSONAL_ANTHROPIC` (your Anthropic API key)
-   - `HUGGINGFACE_HUB_TOKEN` (for SentenceTransformer)
-   - (Optional) other .env variables as needed
-
-3. **Start Redis and MongoDB locally, or connect to remote instances.**
-
-4. **Expose your backend with ngrok:**
+2. **Expose your backend with ngrok:**
    ```bash
    ngrok http 8000
    ```
    Use the generated ngrok HTTPS link to connect your frontend or external services.
 
-5. **Run the server:**
+3. **Run the server:**
    ```bash
    python ground_truth.py
    # or
