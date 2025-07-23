@@ -76,7 +76,7 @@ class Message(BaseModel):
 ```
 
 #### Example Request
-```json
+```jsonc
 {
   "context": [
     {"role": "user", "content": "Hello!"},
