@@ -6,7 +6,7 @@
 
 ## Overview
 
-Flitesmith is a playful, experimental platform inspired by [LangChain's LangSmith](https://smith.langchain.com/), but designed for use with Flite AI. It provides a streamlit frontend for for managing interacting with a chatbot, and viewing the RAG snippets AI responses used as context.
+Flitesmith is an experimental platform inspired by [LangChain's LangSmith](https://smith.langchain.com/), but designed for use with Flite AI. It provides a streamlit frontend for for managing interacting with a chatbot, and viewing the RAG snippets AI responses used as context.
 
 ---
 
